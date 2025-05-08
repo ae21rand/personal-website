@@ -1,0 +1,94 @@
+main.content {
+    min-height: 100vh; /* Take full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align top edges */
+    gap: 2rem;
+    max-width: 1200px; /* Prevent it from stretching too wide */
+    margin: 0 auto; /* Center the whole thing on the page */
+    padding: 40px 20px; /* Add breathing room */
+    flex-wrap: wrap; /* Stack on smaller screens */
+}
+
+/* Form styles */
+.form-section {
+    border: 1px solid #ccc;
+    padding: 30px;
+    border-radius: 8px;
+    width: 50%;
+  } 
+
+.name-fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.name-fields .input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 48%;  
+    min-width: 140px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+
+.full-width {
+    width: 100%;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #202123;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-right {
+    display: flex;
+    align-items: stretch; /* Stretch children to the same height */
+    gap: 2rem;
+    padding-top: 14rem;
+    text-align: center;
+}
+
+.divider {
+    border-left: 2px solid #ccc;
+    height: auto;           /* Let it stretch with the content */
+    align-self: stretch;    /* Force it to fill height of its container */
+    margin: 0 20px;
+}
+

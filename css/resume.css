@@ -1,0 +1,58 @@
+.resume-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.left-resume {
+    width: 35%;
+    box-sizing: border-box;
+}
+
+.right-resume {
+    width: 65%;
+    box-sizing: border-box;
+}
+
+.resume-top h1 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    /* scales from 2.5rem to 5rem depending on viewport width */
+}
+
+
+.resume-top h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+.horizontal-divider {
+    border-top: 2px solid #ccc;
+    width: 100%;
+    /* centers it horizontally and adds vertical spacing */
+}
+
+.vertical-divider {
+    width: 2px;
+    background-color: #ccc;
+  }
+
+
+
+/* ------------------ */
+@media (max-width: 900px) {
+    .resume-container {
+        flex-direction: column;
+    }
+
+    .left-resume,
+    .right-resume {
+        width: 100%;
+    }
+
+    .content {
+        margin-left: 0;
+        /* remove margin on small screens */
+        margin-right: 0;
+    }
+}
